@@ -1,0 +1,126 @@
+    body, header, img, h1, h2, hr, main, section, p, div, input, textarea, button, label, footer{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: #F5F5DC;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    header{
+        background-image: url("./../img/660838.jpg");
+    }
+    header img{
+        display: block;
+        margin: auto;
+        width: 300px;
+    }
+
+    .app{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 800px;
+    }
+
+    section{
+        background-color:#fff;
+        box-shadow: 5px 5px 5px #808080;
+        padding: 30px;
+        width: 600px;
+        color: #808080;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+    }
+    section h1{
+        color: #4F4F4F;
+        margin: 50px 0;
+        font-size:50px;
+        line-height: 45px;
+        text-align: center;
+        font-weight: bold;
+    }
+    section h2{
+        font-size:25px;
+    }
+    section p{
+        margin: 10px 0;
+    }
+
+    section hr{
+        margin: 5px 0;
+    }
+
+
+    section label{
+        display: none;
+    }
+    section textarea{
+        display: block;
+        padding: 10px;
+        width: 100%;
+        height: 200px;
+        max-width: 100%;
+        min-width: 100%;
+        max-height: 200px;
+        min-height: 200px;
+    }
+    section button{
+        background-color: #4169E1;
+        color: #fff;
+        border: none;
+        text-transform: uppercase;
+        padding: 10px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    footer{
+        margin: 10px 0;
+        height: 600px;
+        background-image: url("./../img/660838.jpg");
+        background-attachment: fixed;
+    }
+    
+    .resultado{
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: #191970;
+        opacity: 90%;
+        transition: 0.5s;
+    }
+    .resultado.mostrarResultado{
+        left: 0;
+    }
+    .resultado span{
+        float: right;
+        margin: 20px;
+        color: #fff;
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        border: solid #fff 2px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .resultado p{
+        text-align: center;
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
